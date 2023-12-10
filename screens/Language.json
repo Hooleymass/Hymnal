@@ -1,0 +1,38 @@
+{
+  "English": [
+    {"number": 1, "title": "Hymn 1"},
+    {"number": 2, "title": "Hymn 2"},
+    {"number": 3, "title": "Hymn 3"}
+  ],
+  "Spanish": [
+    {"number": 101, "title": "Himno 101"},
+    {"number": 102, "title": "Himno 102"},
+    {"number": 103, "title": "Himno 103"}
+  ],
+  "Kiswahili": [
+    {"number": 101, "title": "Himno 101"},
+    {"number": 102, "title": "Himno 102"},
+    {"number": 103, "title": "Himno 103"}
+  ],
+  "Russian": [
+    {"number": 101, "title": "Himno 101"},
+    {"number": 102, "title": "Himno 102"},
+    {"number": 103, "title": "Himno 103"}
+  ],
+  "Kiss": [
+    {"number": 101, "title": "Himno 101"},
+    {"number": 102, "title": "Himno 102"},
+    {"number": 103, "title": "Himno 103"}
+  ],
+  "Luo": [
+    {"number": 101, "title": "Himno 101"},
+    {"number": 102, "title": "Himno 102"},
+    {"number": 103, "title": "Himno 103"}
+  ],
+  "Kikuyu": [
+    {"number": 101, "title": "Himno 101"},
+    {"number": 102, "title": "Himno 102"},
+    {"number": 103, "title": "Himno 103"}
+  ]
+}
+
