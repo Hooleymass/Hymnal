@@ -1,28 +1,25 @@
 import React from 'react';
-import { View, TextInput, StyleSheet } from 'react-native';
-import { Button } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import Header from "./Header";
+import { View, TextInput, Button, StyleSheet } from 'react-native';
+import Icon from '../../constants/Icon';
 
 const NumberScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.inputContainer}>
-        <Icon name="hashtag" size={40} color="white" style={{ marginRight: 2 }} />
+        <Icon name="hashtag" type="fontawesome5" size={40} color="white" style={{ marginRight: 2 }} />
         <TextInput
           style={styles.input}
           placeholder="...."
           placeholderTextColor="white"
-          selectionColor="royalblue" // Set the cursor color
-          keyboardType="numeric" // Only allow numeric input
+          selectionColor="royalblue"
+          keyboardType="numeric"
         />
       </View>
       <View style={styles.buttonContainer}>
         <Button
-          icon={<Icon name="book" size={20} color="white" />}
+          icon={<Icon name="auto-stories" size={20} color="white" />}
           title="Open"
           onPress={() => {
-            // Handle button press
           }}
         />
       </View>
@@ -50,8 +47,10 @@ const styles = StyleSheet.create({
     padding: 10,
     fontSize: 40,
     color: "white",
-    marginBottom: 5,
-    width: "80%",
+    marginBottom: 8,
+    paddingBottom: -10,
+    marginRight: 10,
+    width: "60%",
     textAlign: 'center', // Center the input text
     borderBottomWidth: 1,
     borderBottomColor: 'royalblue', // Change border bottom color

@@ -1,17 +1,10 @@
-const { getDefaultConfig } = require('@react-native/metro-config');
+// Learn more https://docs.expo.io/guides/customizing-metro
+const { getDefaultConfig } = require('expo/metro-config');
 
-module.exports = (async () => {
-  const defaultConfig = await getDefaultConfig(__dirname);
-  return {
-    ...defaultConfig,
-    // Remove or correct the watcher.unstable_workerThreads option
-    watcher: {
-      ...defaultConfig.watcher,
-      unstable_workerThreads: false,
-    },
-    // Adjust the entry property to reflect the correct path to your index.js file
-    entry: './index.js',
-    // Add any additional configuration if needed
-  };
-})();
+/** @type {import('expo/metro-config').MetroConfig} */
+const config = getDefaultConfig(__dirname, {
+  // [Web-only]: Enables CSS support in Metro.
+  isCSSEnabled: true,
+});
 
+module.exports = config;

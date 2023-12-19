@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, FlatList, StyleSheet } from 'react-native';
-import { Card } from 'react-native-paper';
 import languageData from './Language.json';  // Import Language.json
 
 const IndexScreen = () => {
